@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Battle Input Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Battle Setup</h1>
+
+    <div class="grid-wrapper">
+      <div class="grid-section">
+        <h2>Friendly</h2>
+        <div class="strength-selector">
+        <label for="strengthLevel">Strength In Numbers Bonus:</label>
+        <select id="strengthLevel" name="strengthLevel">
+          <option value="0">Off</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+        <div class="grid">
+          <div class="input-box friendly">
+            <img src="images/friendly_sword.png" alt="Friendly Sword">
+            <label for="friendlySword">Sword</label>
+            <div class="mini-grid friendly" id="friendlySword" data-section="friendly_sword">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+            </div>
+
+          </div>
+          <div class="input-box friendly">
+            <img src="images/friendly_axe.png" alt="Friendly Axe">
+            <label for="friendlyAxe">Axe</label>
+            <div class="mini-grid friendly" id="friendlyAxe" data-section="friendly_axe">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+            </div>
+          </div>
+          <div class="input-box friendly">
+            <img src="images/friendly_bow.png" alt="Friendly Bow">
+            <label for="friendlyBow">Bow</label>
+            <div class="mini-grid" id="friendlyBow" data-section="friendly_bow">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+            </div>
+          </div>
+          <div class="input-box friendly">
+            <img src="images/skull.png" alt="Friendly Any">
+            <label for="friendlyAny">Any</label>
+            <div class="mini-grid friendly" id="friendlyAny" data-section="frienldly_any">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-section">
+        <h2>Enemy</h2>
+        <div class="grid-spacer"></div>
+        <div class="grid">
+          <div class="input-box enemy">
+            <img src="images/enemy_sword.png" alt="Enemy Sword">
+            <label for="enemySword">Sword</label>
+            <div class="mini-grid enemy" id="enemySword" data-section="enemy_sword">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+            </div>
+          </div>
+          <div class="input-box enemy">
+            <img src="images/enemy_axe.png" alt="Enemy Axe">
+            <label for="enemyAxe">Axe</label>
+            <div class="mini-grid" id="enemyAxe" data-section="enemy_axe">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+            </div>
+          </div>
+          <div class="input-box enemy">
+            <img src="images/enemy_bow.png" alt="Enemy Bow">
+            <label for="enemyBow">Bow</label>
+            <div class="mini-grid" id="enemyBow" data-section="enemy_bow">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+            </div>
+          </div>
+          <div class="input-box enemy">
+            <img src="images/skull.png" alt="Enemy Any">
+            <label for="enemyAny">Any</label>
+            <div class="mini-grid" id="enemyAny" data-section="enemy_any">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+                <input type="number" min="0" placeholder="0" autocomplete="off">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls + output -->
+    <div class="actions">
+      <button id="computeRoute">Compute best route</button>
+      <button id="resetAll" title="Clear all inputs">Clear</button>
+      <button id="testSet" title="Clear all inputs">Test Set</button>
+      <button id="testRoute" title="Clear all inputs">Test Route</button>
+    </div>
+
+    <div id="routeOutput" aria-live="polite"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

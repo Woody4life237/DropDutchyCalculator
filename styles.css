@@ -1,0 +1,184 @@
+/* Remove up/down spinners on number inputs */
+/* Chrome, Safari, Edge */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #1e1e2f, #2c3e50);
+  color: #f0f0f0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 18px; /* scaled up */
+}
+
+.container {
+  background-color: #2c2c3c;
+  padding: 40px; /* scaled up */
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  max-width: 1000px;
+  width: 90%;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+.grid-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+
+.grid-section {
+  flex: 1;
+}
+
+.grid-section h2 {
+  margin-bottom: 15px;
+  color: #a0d8ef;
+  font-size: 1.3em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; /* scaled up */
+}
+
+.input-box {
+  background-color: #efdfc7;
+  padding: 15px; /* scaled up */
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-box img {
+  height: 60px; /* scaled up */
+  margin-bottom: 8px;
+}
+
+.input-box label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: black;
+  font-size: 1.1em;
+}
+
+.input-box input {
+  padding: 8px; /* scaled up */
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  background-color: #555;
+  color: #fff;
+  font-size: 16px; /* scaled up */
+}
+
+
+button {
+  padding: 12px 24px; /* scaled up */
+  font-size: 18px;     /* scaled up */
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#result {
+  margin-top: 25px;
+  font-size: 20px; /* scaled up */
+  color: #ffd700;
+}
+
+/* Mini-grid styling for 8 number inputs in 4x2 layout */
+.mini-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px; /* scaled up */
+  margin-top: 6px;
+}
+
+.mini-grid input[type="number"] {
+  width: 60%;
+  padding: 8px; /* scaled up */
+  font-size: 16px; /* scaled up */
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #666;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Output */
+#routeOutput {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  background-color: #efdfc7;
+  font-weight: bolder;
+  color: black;
+  font-size: x-large;
+  border-radius: 6px;
+  /* background: #fafafa; */
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+#routeOutput .summary { margin: 0 0 8px; }
+#routeOutput ol { margin: 0; padding-left: 18px; }
+#routeOutput li { margin: 4px 0; }
+
+.strength-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  font-family: inherit;
+}
+
+.strength-selector label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: black;
+}
+
+.strength-selector select {
+  padding: 4px 8px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+.grid-spacer {
+  height:64px; /* Match the height of .strength-selector */
+}
